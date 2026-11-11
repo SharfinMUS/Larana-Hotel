@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f75590;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fce4d8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            text-align:center;
+        }
+        .form-group {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            width: 150px;
+            font-weight: bold;
+            text-align:left;
+        }
+        .form-group.gender {
+   			 display: flex;
+   			 align-items: center;
+   			 background: #ffe6dc;
+   			 padding: 10px;
+			 border-radius: 5px;
+		}
+		.form-group.gender label {
+   			 margin-right: 15px;
+    		 font-weight: bold;
+		}
+
+		.radio-checkbox {
+   			 display: flex;
+  			 gap: 15px;
+    		 align-items: center;
+		}
+        .form-group input, .form-group select {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input[type=checkbox], .form-group input[type=radio] {
+            margin-right: 5px;
+        }
+        .button-group {
+            text-align: center;
+        }
+        
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        .button1:hover{
+			background-color:#f75590	
+		}
+		.button2:hover{
+			background-color:#f75590	
+		}
+		.button3:hover{
+			background-color:#f75590	
+		}
+
+        button[type=reset] {
+            background: #dc3545;
+        }    
+        p{
+	text-align:	center;
+		}
+	     </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Account Information</h2>
+        <div class="form-group"><label>Login Name*</label><input type="text" required></div>
+        <div class="form-group"><label>Password*</label><input type="password" required><input type="hidden" name="pro" value="password123UOM"></div>
+        <div class="form-group"><label>Confirm Password*</label><input type="password" required></div>
+        <div class="form-group"><label>Email Address</label><input type="email" required></div>
+        <div class="form-group"><label>Confirm Email</label><input type="email" required></div>
+        
+        <h2>Contact Information</h2>
+        <div class="form-group"><label>First Name*</label><input type="text" required></div>
+        <div class="form-group"><label>Last Name*</label><input type="text" required></div>
+        <div class="form-group"><label>Address*</label><textarea name="textarea" cols="60" required>Write your address here</textarea></div>
+        <div class="form-group"><label>City*</label><input type="text" required></div>
+        <div class="form-group"><label>State or Province*</label>
+            <select>
+            <option >Select...</option>
+            <option >Eastern</option>
+            <option >Western</option>
+            <option >Uva</option>
+            <option >Sabragamuva</option>
+            <option >Southern</option>
+            <option >North-Western</option>
+            <option >Northern</option>
+            <option >North-Central</option></select>
+
+        </div>
+        <div class="form-group"><label>Zip*</label><input type="text"></div>
+        <div class="form-group"><label>Country*</label><input type="text"></div>
+        <div class="form-group"><label>Gender*</label>
+        <div class="form-group gender"><div class="radio-checkbox">
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Male"> Male
+        </div></div>
+        </div>
+        
+        <h2>Misc. Information</h2>
+        <div class="form-group"><label>Annual Household Income</label>
+            <select><option>Select...</option>
+            <option >Select...</option>
+            <option >0-100,000/-</option>
+            <option >100,000-250,000/-</option>
+            <option >Above 250,000/-</option>
+           </select>
+        </div>
+        <div class="form-group"><label>Interests</label>
+        <div class="radio-checkbox">
+            <input type="checkbox"> Shopping
+            <input type="checkbox"> Fashion
+            <input type="checkbox"> Sports
+            <input type="checkbox"> Travel
+        </div>
+        </div>
+        <div class="form-group"><label>Eye Color</label>
+        <div class="radio-checkbox">
+            <input type="radio" name="eye-color" value="Red"> Red
+            <input type="radio" name="eye-color" value="Green"> Green
+            <input type="radio" name="eye-color" value="Brown"> Brown
+            <input type="radio" name="eye-color" value="Blue"> Blue
+            <input type="radio" name="eye-color" value="Gold"> Gold
+        </div>
+        </div>
+        
+        <div class="button-group">
+            <button type="submit" class="button1">Submit</button>
+            <button type="reset" class="button2">Reset</button>
+        </div>
+            </div>
+            <iframe src="https://quickdealz.lk/" name="iframe_a" style="border:border:2px solid red;height:100%;width:100%;" title="Iframe Example"></iframe>
+            <p><a href="https://quickdealz.lk/" target="iframe_a" >iFrame Example</a></p>
+</body>
+</html>
